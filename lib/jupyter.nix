@@ -148,6 +148,7 @@
       echo "c.NotebookApp.use_redirect_file = False" >> $out/config/jupyter_notebook_config.py
       echo "c.NotebookApp.ip = '0.0.0.0'" >> $out/config/jupyter_notebook_config.py
       echo "c.NotebookApp.allow_origin = '*'" >> $out/config/jupyter_notebook_config.py
+      echo "c.NotebookApp.token = ''" >> $out/config/jupyter_notebook_config.py
 
       # make jupyter lab user settings and workspaces directories
       mkdir -p $out/config/lab/{user-settings,workspaces}
