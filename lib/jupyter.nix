@@ -145,7 +145,7 @@
     jupyterDir = pkgs.runCommand "jupyter-dir" {} ''
       # make jupyter config and data directories
       mkdir -p $out/config $out/data
-      echo "c.NotebookApp.use_redirect_file = False" > $out/config/jupyter_notebook_config.py
+      echo "c.NotebookApp.use_redirect_file = False" >> $out/config/jupyter_notebook_config.py
       echo "c.NotebookApp.ip = '0.0.0.0'" >> $out/config/jupyter_notebook_config.py
       echo "c.NotebookApp.allow_origin = '*'" >> $out/config/jupyter_notebook_config.py
 
