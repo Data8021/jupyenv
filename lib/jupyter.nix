@@ -136,12 +136,6 @@
         nodejs
         nodePackages.npm
         git
-        python310Packages.jupyterlab-git
-        python310Packages.jupyterlab-lsp
-        python310Packages.jupyterlab-widgets
-        python310Packages.python-lsp-server
-        rPackages.languageserver
-        rPackages.languageserversetup
       ]);
 
     kernelDerivations = kernels;
