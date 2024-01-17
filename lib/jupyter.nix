@@ -136,7 +136,6 @@
         nodejs
         nodePackages.npm
         git
-        python310Packages.jupyterlab-git
       ]);
 
     kernelDerivations = kernels;
